@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ed2e8cef0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/rock-paper-scissors.js" defer></script>
+  <title>Taş Kağıt Makas</title>
+</head>
+<body>
+  <div class="all-in-container">
+    <div class="container">
+      <h1>Taş Kağıt Makas</h1>
+      <div class="choose-container">
+        <div class="user">
+          <h2>Oyuncu</h2>
+          <div class="btn btn--rock user-btn" id="rockBtn">
+            <img src="assets/images/button.png">
+            <p>Taş</p>
+          </div>
+          <div id="paperBtn" class="btn user-btn">
+            <img src="assets/images/button.png">
+            <p>Kağıt</p>
+          </div>
+          <div id="scissorsBtn" class="btn user-btn">
+            <img src="assets/images/button.png">
+            <p>Makas</p>
+          </div>
+        </div>
+        <div class="divider">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="computer">
+          <h2>Bilgisayar</h2>
+          <div class="computer-buttons">
+            <div id="compRockBtnBg" class="btn btn--rock btn--rock__comp compbtn">
+              <img src="assets/images/button.png">
+              <p id="compRockBtn"></p>
+            </div>
+            <div id="compBtnBg"  class="btn btn--computer compbtn">
+              <img src="assets/images/button.png">
+              <p id="compPaperBtn"></p>
+            </div>
+            <!-- <div id="compScissorsBtn" class="btn compbtn">
+              <img src="assets/images/button.png">
+              <p>Makas</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="score-board">
+        <p id="userScore">Oyuncu: 0</p>
+        <p id="compScore">Bilgisayar: 0</p>
+      </div>
+      <div class="score-buttons">
+        <div id="winnerBtn" class="score-button">
+          <img src="assets/images/button-green.png">
+          <p>Kazanan Oyuncu</p>
+        </div>
+        <div id="resetBtn" class="score-button">
+          <img src="assets/images/button-white.png">
+          <p>Skorları Sıfırla</p>
+        </div>
+      </div>
+    </div>
+    <div class="winner-alert">
+      <div class="winner-board" id="winnerAlert">
+        <i class="fa-solid fa-x" id="exitIcon"></i>
+        <h2>Kazanan Oyuncu</h2>
+        <p id="winnerTxt"></p>
+        <p id="winnerCounter"></p>
+      </div>
+    </div>
+  </div>
+  <span class="opacity" id="opacityBg"></span>
+</body>
+</html>
